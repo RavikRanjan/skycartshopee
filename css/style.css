@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-seri
+}
+ 
+#searchbox{
+    margin-left: 0px;
+    color: rgb(6, 6, 6);
+    border-radius: 10;
+    position: relative;
+    left: 47px;
+    
+}
+#searchbox::placeholder{
+    color: rgb(0, 0, 0);
+}
+#searchbtn{
+    position: relative;
+    z-index: 90;
+    color: rgb(5, 5, 5);
+    border: 0;
+    border-radius: 10;
+    background-color: blueviolet;
+}
+.sky{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+    color: white;
+}
+.lgn{
+    float: right;
+}
+.btnlgn{
+    text-decoration: none;
+    color: black;
+    margin-left: 100px;
+    padding-top: 10px;
+    color: white;
+}
+.btnlgn:hover{
+    color: black;
+}
+.sselect{
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+}
+.bi{
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+}
+.card-group{
+    margin: 10px;
+}
+.head{
+    padding: 20px;
+    margin-left: 20px;
+}
+.head img{
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+}
+.head h6{
+    color: rebeccapurple;
+    text-align: center;
+}
+
+/*footer*/
+.payment img{
+    margin: 0px;
+    padding-left: 15px;
+    align-items: center;
+    padding-top: 10px;
+}
+.payment:hoverP{
+    transform: scale(1.9);
+    transition: 0.5s linear;
+}
+.followus{
+    padding-top: 40px;
+    text-align: center;
+    color:  white;
+    font-size: 20px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 1;
+    padding-top: 30px;
+}
+@media screen and (max-width : 446px) {
+    .socials{
+        display: block;
+    }
+    
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color 0.4s ease; 
+}
+.socials a:hover i{
+    color: rgb(255, 0, 0);
+    padding-left: 8px;
+}
+.socials a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+.
+
+/*scroll*/
+
+.scroll{
+    text-align: right;
+}
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: rgb(213, 134, 134);
+    bottom: 20px;
+    right: 10px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+}
+.category{
+    text-decoration: none;
+    color: red;
+}
+.categry{
+    color: red;
+}
+ 
+.container-fluid{
+    width: 100%;
+    
+}
+.wrapper{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+.product-box{
+    display: flex;
+    flex-direction: row;
+}
+.all-images img{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 30px;
+}
+.all-images p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media only screen and  ( max-width : 1350px){
+    .container-fluid{
+        width: 70%;
+        
+    }
+    .all-images img{
+        margin: 10px;
+    }
+
+}
+
+@media only screen and  ( max-width : 990px){
+    .container-fluid{
+        width: 50%;
+        
+    }
+    .all-images img{
+        margin: 1px;
+        height: 50px;
+        width: 50px;
+    }
+    .all-images p{
+        font-size: 8px;
+    }
+
+}
+@media only screen and  ( max-width : 470px){
+    .container-fluid{
+        width: 50%;
+        
+    }
+    .all-images img{
+        margin: 1px;
+        height: 40px;
+        width: 40px;
+    }
+    .all-images p{
+        font-size: 8px;
+    }
+    .card-body .btn{ 
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media only screen and  ( max-width : 359px){
+    .card-body .btn{ 
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .all-images img{
+        margin: 1px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.dclock h3{
+    color: red;
+    display: flex;
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+.card img{
+    height: 350px;
+    width: 250;
+}
+.card-body .btn{
+    font-size: 14px;
+}
+ 

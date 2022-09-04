@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/skylogo.png"/>
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="css/killer.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row bg-primary p-2">
+            <div class="col-sm-3">
+                <h6 class="sky">SKY-CART SHOPPEE</h6>
+            </div>
+            <div class="col-md-6">
+                <form class="d-flex" role="search" id="searchform">
+                    <input class="form-control me-2" type="search" placeholder="Search for Product, Brand and More..."
+                        aria-label="Search" id="searchbox">
+                    <button class="btn btn-outline-primary" type="submit" id="searchbtn"><i
+                            class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <div class="lgn col-sm-3">
+                <a href="#" class="btnlgn">Login</a>
+                <select name="" id="" class="ssselect bg-primary">
+                    <option value="1">More</option>
+                    <option value="2">My Profile</option>
+                    <option value="3">Order</option>
+                    <option value="4">Wishlist</option>
+                </select>
+                <a href="#"><i class="bi bi-cart-fill"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                    <div class="small-images">
+                        <img src="image/spary/spary9.jpg" onclick="clickimg(this)" alt="">
+                        <img src="image/spary/spary8.jpg" onclick="clickimg(this)" alt="">
+                        <img src="image/spary/spary3.jpg" onclick="clickimg(this)" alt="">
+                        <img src="image/spary/spary4.jpg" onclick="clickimg(this)" alt="">
+                    </div>
+                    <div class="main-images">
+                        <img src="image/spary/spary5.jpg" id="imagebox" class="img_fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand : Perfume</p>
+                    <h2>Safe Purfume</h2>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="price-box">
+                        <p class="price">&#8377; 390</p>
+                        <strike>&#8377; 999</strike>
+                    </div>
+                    <p>Color : <select name="size">
+                            <option value="select color">select Variaty</option>
+                            <option value="black">Rose</option>
+                            <option value="blue">Rose</option>
+                            <option value="purple">Rose</option>
+                            <option value="green">Rose</option>
+                            <option value="purple">Rose</option>
+                        </select></p>
+
+                    <p>Quantity : <input type="text" value="1"></p>
+
+
+                </div>
+                <div class="abaible pt-3">
+                    <h3>Available offers</h3><br />
+                    <p>
+                        Coupon Discount: Rs. 125 off (check cart for final savings)<br /><br />
+
+                        Applicable on: Orders above Rs. 1599 (only on first purchase)<br /><br />
+
+                        Partner Offer: Buy this product and get upto ₹250 off on apnaMart. <br /><br />
+                    </p>
+                </div>
+                <button>
+                    <span class="fa fa-shopping-cart"></span>
+                    Add to cart
+                </button>
+                <button class="buy">
+                    <span class="fa fa-shopping-cart"></span>
+                    Buy Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--********View Simililer Product***********-->
+    <div class="container-fluid">
+        <div class="row pt-2 pb-5">
+            <div class="content1">
+                <h3>Similler Products <a href="spary.html"><button>View All</button></h3></a>
+
+            </div>
+            <div class="col-sm-3  mt-4">
+                <div class="card">
+                    <a href="spary_detail.html"><img src="image/kids/kid1.png" class="img_fluid" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">KAARIGARI</h5>
+                        <p class="card-text text-center">Maxi Full Lenth<br />Price : &#8377; 389.00 - <strike
+                                class="text-danger">&#8377; 899.00</strike></p>
+                        <a href="#" class="btn btn-primary m-2 text-center">Add To Cart</a><a href="#"
+                            class="btn btn-primary m-2">Add To Wishlist</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3  mt-4">
+                <div class="card">
+                    <a href="spary_detail.html"><img src="image/spary/spary3.jpg" class="img_fluid" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">ZOROe</h5>
+                        <p class="card-text text-center"> Formal Party<br />Price : &#8377; 289.00 - <strike
+                                class="text-danger">&#8377; 776.00</strike></p>
+                        <a href="#" class="btn btn-primary m-2">Add To Cart</a><a href="#"
+                            class="btn btn-primary m-2">Add To Wishlist</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3  mt-4">
+                <div class="card">
+                    <a href="spary_detail.html"><img src="image/kids/kid3.jpg" class="img_fluid" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">KAEZRI</h5>
+                        <p class="card-text text-center"> Suit and Pent Black<br />Price : &#8377; 189.00 - <strike
+                                class="text-danger">&#8377; 429.00</strike></p>
+                        <a href="#" class="btn btn-primary m-2">Add To Cart</a><a href="#"
+                            class="btn btn-primary m-2">Add To Wishlist</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3  mt-4">
+                <div class="card">
+                    <a href="men_detail.html"><img src="image/spary/spary5.jpg" class="img_fluid" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pacific Gold</h5>
+                        <p class="card-text text-center">Cool Avatar<br />Price : &#8377; 489.00 - <strike
+                                class="text-danger">&#8377; 950.00</strike></p>
+                        <a href="#" class="btn btn-primary m-2">Add To Cart</a><a href="#"
+                            class="btn btn-primary m-2">Add To Wishlist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--******copyright********-->
+    <div class="container-fluid">
+        <div class="row justify-content-evenly bg-secondary text-white text-center p-2">
+            <div class="col-12">
+                <p style="font-size: 20px;">
+                    Copyright<span>&copy</span>2022-2023 SKY-CART SHOPPEE. All Rights Reserved. By Ravi Ranjan. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function clickimg(samalImg) {
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = samalImg.src
+        }
+
+    </script>
+
+</body>
+
+</html>

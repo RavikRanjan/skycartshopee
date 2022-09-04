@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-seri
+}
+ 
+#searchbox{
+    margin-left: 0px;
+    color: rgb(6, 6, 6);
+    border-radius: 10;
+    position: relative;
+    left: 47px;
+    
+}
+#searchbox::placeholder{
+    color: rgb(0, 0, 0);
+}
+#searchbtn{
+    position: relative;
+    z-index: 90;
+    color: rgb(5, 5, 5);
+    border: 0;
+    border-radius: 10;
+    background-color: blueviolet;
+}
+.sky{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+    color: white;
+}
+.lgn{
+    float: right;
+}
+.btnlgn{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    padding-top: 10px;
+    color: white;
+}
+.btnlgn:hover{
+    color: black;
+}
+.ssselect{
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+}
+.bi{
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+}
+.categry{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+ul{
+    list-style-type: none;
+    font-size: 20px;
+    list-style-position: outside;
+    flex-direction: row;
+     
+}
+.sselect{
+    background: none;
+    color: black;
+    margin: 20px;
+    padding: 10px; 
+    padding-right: 70px;
+}
+
+.multipleSelection {
+    width: 230px;
+    background-color: white;
+}
+ 
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: 200;
+    background: none;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkBoxes {
+    display: none;
+    
+}
+ 
+#checkBoxes label {
+    display: block;
+}
+ 
+
+#checkBoxes label:hover {
+    background-color: white;
+}
+ .card img{
+    height: 350px;
+ }

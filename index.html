@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="image/bag/skylogo.png">
+    <title>Apna Skypee Bajar</title>
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--font--> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/call.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+
+    <!--*******js********-->
+
+</head>
+
+<body onload="realtimeClock()">
+    <!-----**********Navbar**************-->
+
+    <div class="container-fluid">
+        <div class="row bg-primary p-2">
+            <div class="col-sm-3">
+                <h6 class="sky">SKY-CART SHOPPEE</h6>
+            </div>
+            <div class="col-md-6">
+                <form class="d-flex" role="search" id="searchform">
+                    <input class="form-control me-2" type="search" placeholder="Search for Product, Brand and More..."
+                        aria-label="Search" id="searchbox">
+                    <button class="btn btn-outline-primary" type="submit" id="searchbtn"><i
+                            class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <div class="lgn col-sm-3">
+                <a href="user/login.php" class="btnlgn">Login</a>
+                <select name="" id="" class="sselect bg-primary">
+                    <option value="1">More</option>
+                    <option value="2">My Profile</option>
+                    <option value="3">Order</option>
+                    <option value="4">Wishlist</option>
+                </select>
+                <a href="#"><i class="bi bi-cart-fill"></i></a>
+            </div>
+        </div>
+    </div>
+    <!----*************Brand*****************----->
+
+    <div class="container-fluid">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                    <a href="kids.html"><img src="image/kids/kid1.png" alt=""></a>
+                    <p>Kids</p>
+                </div>
+                <div class="all-images">
+                    <a href="men.html"><img src="image/man/men1.jpg" alt=""></a>
+                    <p>Mens</p>
+                </div>
+                <div class="all-images">
+                    <a href="women.html"><img src="image/women/women5.jpg" alt=""></a>
+                    <p>Women</p>
+                </div>
+                <div class="all-images">
+                    <a href="Beauty.html"><img src="image/beauty/buty2.png" alt=""></a>
+                    <p>Beauty</p>
+                </div>
+                <div class="all-images">
+                    <a href="bag.html"><img src="image/bag/bag4.png" alt=""></a>
+                    <p>Begs</p>
+                </div>
+                <div class="all-images">
+                    <a href="belts.html"><img src="image/belt/belt3.jpg" alt=""></a>
+                    <p>Belts</p>
+                </div>
+                <div class="all-images">
+                    <a href="spary.html"><img src="image/spary/spary3.jpg" alt=""></a>
+                    <p>Spary</p>
+                </div>
+                <div class="all-images">
+                    <a href="watch.html"><img src="image/watch/wtch5.jpg" alt=""></a>
+                    <p>Watch</p>
+                </div>
+                <div class="all-images">
+                    <a href="ties.html"><img src="image/tie/tie4.jpg" alt=""></a>
+                    <p>Ties</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--************slidebar img******************-->
+     
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/fashionsale.3071fadf18ef75cdee1c.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/gadget-sale.ec893927252d46afc4d9.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    <!--------------*************deals of day****************----------------->
+    <hr>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="dclock">
+                <h3>Deals Of The Day : <div id="clock"></div>
+                </h3>
+            </div>
+
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="bag_detail.html"><img src="image/bag/bag8.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">American bag</h5>
+                        <p class="card-text text-center">Red medium size<br />Price : &#8377; 689.00 - <strike
+                                class="text-danger">&#8377; 950.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="Beauty_detail.html"><img src="image/beauty/buty3.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Facewash</h5>
+                        <p class="card-text text-center">all face remove the<br />Price : &#8377; 289.00 - <strike
+                                class="text-danger">&#8377; 450.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="Beauty_detail.html"><img src="image/beauty/buty5.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">All Beauty product</h5>
+                        <p class="card-text text-center">Akki beauty product <br />Price : &#8377; 489.00 - <strike
+                                class="text-danger">&#8377; 750.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="belts_detail.html"><img src="image/belt/belt7.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Belt </h5>
+                        <p class="card-text text-center">Lether Belt Ucren style<br />Price : &#8377; 489.00 - <strike
+                                class="text-danger">&#8377; 750.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="kind_detail.html"><img src="image/kids/kid1.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Kids cloths</h5>
+                        <p class="card-text text-center">Red color indian style<br />Price : &#8377; 689.00 - <strike
+                                class="text-danger">&#8377; 850.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="men_detail.html"><img src="image/man/men3.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sparky Shirt</h5>
+                        <p class="card-text text-center">Sparky Shirt man size m<br />Price : &#8377; 1289.00 - <strike
+                                class="text-danger">&#8377; 1950.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <div class="container-fluid">
+        <div class="row justify-content-evenly">
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="Beauty_detail.html"><img src="image/women/women2.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Soiourn</h5>
+                        <p class="card-text text-center">pure dry Soiourn <br />Price : &#8377; 289.00 - <strike
+                                class="text-danger">&#8377; 650.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="Beauty_detail.html"><img src="image/watch/wtch5.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sempoo</h5>
+                        <p class="card-text text-center">All in One for daily use<br />Price : &#8377; 1589.00 - <strike
+                                class="text-danger">&#8377; 1950.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="Beauty_detail.html"><img src="image/tie/tie6.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Lipistic</h5>
+                        <p class="card-text text-center">Lip lipistic <br />Price : &#8377; 189.00 - <strike
+                                class="text-danger">&#8377; 250.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="Beauty_detail.html"><img src="image/spary/spary6.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Brush</h5>
+                        <p class="card-text text-center">Face Brush<br />Price : &#8377; 289.00 - <strike
+                                class="text-danger">&#8377; 399.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="Beauty_detail.html"><img src="image/man/men8.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">cantu</h5>
+                        <p class="card-text text-center">shou butter<br />Price : &#8377; 389.00 - <strike
+                                class="text-danger">&#8377; 550.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="Beauty_detail.html"><img src="image/bag/bag8.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ledies hand bag</h5>
+                        <p class="card-text text-center">ledies formal hand bag red color<br />Price : &#8377; 189.00 - <strike
+                                class="text-danger">&#8377; 250.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!--************slidebar img******************-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/rvg.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/1.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <hr>
+    <div class="container-fluid">
+        <div class="row justify-content-evenly">
+            <!--<h1 class="deal">Deals Of The Day : <div id="clock"></div></h1>-->
+
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="bag_detail.html"><img src="image/bag/bag5.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bag</h5>
+                        <p class="card-text text-center">Red color small<br />Price : &#8377; 1189.00 - <strike
+                                class="text-danger">&#8377; 1850.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="kind_detail.html"><img src="image/kids/kid7.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Boys Shirt</h5>
+                        <p class="card-text text-center">Jins shirts for childs<br />Price : &#8377; 589.00 - <strike
+                                class="text-danger">&#8377; 899.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="men_detail.html"><img src="image/man/men6.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sparky Men </h5>
+                        <p class="card-text text-center">Red color size l<br />Price : &#8377; 989.00 - <strike
+                                class="text-danger">&#8377; 1350.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="spary_detail.html"><img src="image/spary/spary9.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Kamsurt</h5>
+                        <p class="card-text text-center">All in one <br />Price : &#8377; 889.00 - <strike
+                                class="text-danger">&#8377; 1150.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="ties_detail.html"><img src="image/tie/tie8.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Rizoro Tiea</h5>
+                        <p class="card-text text-center">Rizoro ties red color<br />Price : &#8377; 289.00 - <strike
+                                class="text-danger">&#8377; 450.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 mt-2">
+                <div class="card">
+                    <a href="watch_detail.html"><img src="image/watch/wtch8.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Digital Watch</h5>
+                        <p class="card-text text-center">Sumsong Digital watch<br />Price : &#8377; 2589.00 - <strike
+                                class="text-danger">&#8377; 3550.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br />
+
+    <div class="container-fluid">
+        <div class="row justify-content-evenly">
+            <!--<h1 class="deal">Deals Of The Day : <div id="clock"></div></h1>-->
+
+            <div class="col-sm-2">
+                <div class="card">
+                    <a href="bag_detail.html"><img src="image/women/women8.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bag</h5>
+                        <p class="card-text text-center">Red color small<br />Price : &#8377; 1189.00 - <strike
+                                class="text-danger">&#8377; 1850.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <a href="kind_detail.html"><img src="image/belt/belt1.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Boys Shirt</h5>
+                        <p class="card-text text-center">Jins shirts for childs<br />Price : &#8377; 589.00 - <strike
+                                class="text-danger">&#8377; 899.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <a href="men_detail.html"><img src="image/kids/kid3.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sparky Men </h5>
+                        <p class="card-text text-center">Red color size l<br />Price : &#8377; 989.00 - <strike
+                                class="text-danger">&#8377; 1350.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <a href="bag_detail.html"><img src="image/bag/bag4.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ledies Hand Bag</h5>
+                        <p class="card-text text-center">Formal ledies hand bag<br />Price : &#8377; 889.00 - <strike
+                                class="text-danger">&#8377; 1150.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <a href="ties_detail.html"><img src="image/watch/wtch8.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Rizoro Tiea</h5>
+                        <p class="card-text text-center">Rizoro ties red color<br />Price : &#8377; 289.00 - <strike
+                                class="text-danger">&#8377; 450.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <a href="watch_detail.html"><img src="image/spary/spary6.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Digital Watch</h5>
+                        <p class="card-text text-center">Sumsong Digital watch<br />Price : &#8377; 2589.00 - <strike
+                                class="text-danger">&#8377; 3550.00</strike></p>
+                        <a href="#" class="btn btn-primary m-1">Add Cart</a><a href="#" class="btn btn-primary m-1">Buy
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br />
+
+
+    <!--- footer- -->
+    <div class="container-fluid">
+        <div class="row justify-content-evenly bg-dark text-white pt-2 pb-5">
+            <div class="col-md-3 pt-4">
+                <h6 class="footerhed">SKY-CART-SHOPPEE </h6><br />
+                <p class="footerhead" style="color: rgba(203, 203, 203, 0.845);">
+                    There are many variatioes of Lorem<br />available.But the majority have suffered!<br />injecte
+                    humour, or
+                    randomised w't look</p><br />
+                <i class="bi bi-telephone"></i> <span></span>: +91-6200486684<br /><br />456 Mlare Point Bestern Kajara
+                Los
+                Angels<br />bipinkr6684@gmail.com
+            </div>
+            <div class="col-md-3 pt-4">
+                <h5 class="pb2" style="text-align: center;">Information</h5><br />
+                <p>
+                    <a href="#" class="link-light text-decoration-none">Gift Vouchers</a><br />
+                    <a href="#" class="link-light text-decoration-none">Support Center</a><br />
+                    <a href="#" class="link-light text-decoration-none">Returns</a><br />
+                    <a href="#" class="link-light text-decoration-none">Delivery Information</a><br />
+                    <a href="#" class="link-light text-decoration-none">Terms & Conditation</a><br />
+                    <a href="#" class="link-light text-decoration-none">Privacy Policy</a><br />
+                    <a href="#" class="link-light text-decoration-none">Specials Offers</a><br />
+                </p>
+            </div>
+            <div class="col-md-3 pt-4">
+                <h5 class="pb2" style="text-align: center;">Payment method</h5><br />
+                <div class="payment">
+                    <a href="#"><img src="image/card-1.png" alt=""></a>
+                    <a href="#"><img src="image/card-2.png" alt=""></a>
+                    <a href="#"><img src="image/card-3.png" alt=""></a>
+                    <a href="#"><img src="image/card-4.png" alt=""></a>
+                    <a href="#"><img src="image/card-5.png" alt=""></a>
+                    <a href="#"><img src="image/card-6.png" alt=""></a>
+                </div>
+                <div class="followus">
+                    <h3>Follow Us</h3>
+                    <!--<p class="followp">
+            <a href="#" class="link-light text-decoration-none"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="link-light text-decoration-none"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="link-light text-decoration-none"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="link-light text-decoration-none"><i class="bi bi-youtube"></i></a>
+          </p>-->
+                    <ul class="socials">
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="#"><i class="bi bi-google"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Copyright-->
+        <div class="row justify-content-evenly bg-secondary text-white text-center p-2">
+            <div class="col-12">
+                <p style="font-size: 20px;">
+                    Copyright<span>&copy</span>2022-2023 Car Service and Inventory Store. All Rights Reserved. By Bipin
+                    VVITian.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--scroll bar
+    <div class="scroll">
+        <a class="gotopbtn" href="#"><i class="bi bi-chevron-double-up"></i></a>
+    </div>-->
+</body>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+
+</html>
